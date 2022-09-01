@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>SUDOKO GAME</h1>
+
+    <div id="main">
+        <div id="row1" class="row">
+        </div>
+        <div id="row2" class="row">
+        </div>
+        <div id="row3" class="row">
+        </div>
+        <div id="row4" class="row">
+        </div>
+        <div id="row5" class="row">
+        </div>
+        <div id="row6" class="row">
+        </div>
+        <div id="row7" class="row">
+        </div>
+        <div id="row8" class="row">
+        </div>
+        <div id="row9" class="row">
+        </div>     
+    </div>
+
+    <button type="button" id="start" onclick="start()">START</button>
+    <button type="button" id="replay" onclick="replay()">NEW GAME</button>
+    <button type="button" id="answer" onclick="answer()">ANSWER</button>
+
+    <div id="game_type">
+        <h3>CHOOSE LEVEL:</h3>
+        <label><input type="radio" id="easy" class="label" name="diff_level" checked> Easy</label>
+        <label><input type="radio" id="medium" class="label" name="diff_level"> Medium</label>
+        <label><input type="radio" id="hard" class="label" name="diff_level"> Hard</label>
+        <h3>TIME LIMIT :</h3>
+        <label><input type="radio" id="time1" class="label" name="time"><span id="time1_min">03</span>:<span
+                id="time1_sec">00</span></label>
+        <label><input type="radio" id="time2" class="label" name="time" checked><span id="time2_min">05</span>:<span
+                id="time2_sec">00</span></label>
+        <label><input type="radio" id="time3" class="label" name="time"> <span id="time3_min">10</span>:<span
+                id="time3_sec">00</span></label>
+
+        <button type="button" id="help" onclick="help()">HOW TO PLAY</button>
+
+    </div>
+
+    <div id="lives">YOU HAVE ONLY <span id="rem_live">3</span> LIVES</div>
+
+    <div id="timer">Time Remains: <span id="time_min">00</span>:<span id="time_sec">00</span></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
